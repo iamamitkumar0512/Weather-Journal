@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Journal APP AK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap-app">
+    <div id="app">
+      <div class="holder headline">
+        <h1 class="main-heading">Weather Journal App AK</h1>
+      </div>
+        <div class="holder zip">
+          <input type="text" id="zip" maxlength="6" placeholder="enter zip here">
+          <label for="zip" class="zip-label">Please enter zip code here(US only)</label>
+        </div>
+        <div class="holder feel">
+          <textarea class="feel-input" id="feelings" maxlength="40" placeholder="Enter your feelings here" ></textarea>
+          <label for="feelings" class="feel-label">How Are You Feeling Today?</label>
+        </div>
+        <button id="generate" type="submit"> Generate </button>
+      <div class="holder entry">
+        <h2 class="entryHolder">Most Recent Entry</h2>
+            <div id="date">Date</div>
+            <div id="temp">Temp</div>
+            <div id="content">Feelings</div>
+      </div>
+    </div>
+  </div>
+<script src="app.js" type="text/javascript"></script>
+
+
+</body>
+</html>

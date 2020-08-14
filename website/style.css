@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+  font-size: 65%;
+}
+
+body {
+  background: rgb(240,212,65);
+  color: #000;
+  margin: 0;
+  padding: 0;  
+}
+
+/* App heading */
+
+.headline {
+  background-color: rgb(240,212,65);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.main-heading {
+  color: #000;
+  font-size: 3.3rem;
+  letter-spacing: 0.6rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 951px) {
+  .main-heading {
+    font-size: 3.5rem;
+  }
+}
+
+
+.wrap-app {
+  background: url(./img/sky.jpg) no-repeat center center/ cover;
+  height: 99vh;
+  padding: 7.8rem;
+  width: 99vw;
+}
+
+#app {
+  align-items: stretch;
+  background: transparent;
+  border-radius: 3rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  width: 52vw;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+
+#app input:focus ~ label,
+#app textarea:focus ~ label,
+#app input:valid ~ label,
+#app textarea:valid ~ label {
+  font-size: 1.5rem;
+  transform: translateY(-1.1rem);
+}
+
+#app input:focus,
+#app textarea:focus {
+  border: 0.3rem solid rgb(240,220,65);
+}
+
+/* ZIP & feelings input */
+
+#zip,
+#feelings {
+  background: #444;
+  border: 0.2rem solid #000;
+  border-radius: 1.2rem;
+  color: rgb(240,220,65);
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  width: 80%;
+}
+.zip-label,
+.feel-label{
+font-size:2rem;
+}
+
+#zip {
+  padding: 1.6rem 1.1rem;
+  text-transform: uppercase;
+  width: 100%;
+  height: 4rem;
+}
+
+.zip {
+  position: relative;
+  width: 80%;
+}
+
+
+
+  
+/* Feelings field */
+
+.feel {
+  position: relative;
+  width: 100%;
+}
+
+#feelings {
+  overflow: hidden;
+  padding: 3.3rem;
+  resize: none;
+  height: 6rem
+}
+
+/* Button Generate */
+
+#generate {
+  background: rgb(240,220,65);
+  border: 0.3rem solid #000;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 2rem #222;
+  color: #000;
+  letter-spacing: 0.2rem;
+  margin-top: 3rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  transition: all 0.6s;
+  width: 50%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 8rem;
+
+}
+
+@media only screen and (min-width: 701px) {
+  #generate {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 951px) {
+  #generate {
+    font-size: 2.4rem;
+  }
+}
+
+#generate:active {
+  transform: translateY(0);
+}
+
+#generate:hover {
+  transform: translateY(-0.3rem);
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Most recent entry styling */
+#date,
+#temp,
+#content {
+  padding: 0 4.1rem 0 2.1rem;
+  font-size: 1.5rem;
+}
